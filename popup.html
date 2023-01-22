@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perion QA Extension</title>
+    <style>
+      body {
+        text-align: center;
+        width: 350px;
+      }
+
+      p {
+        font-size: 16px;
+        margin: 0;
+        text-align: left !important;
+      }
+
+      table {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid #ddd;
+      }
+
+      #hydrateImage {
+        width: 150px;
+        margin: 5px;
+      }
+
+      button {
+        border-radius: 4px;
+        background-color: #e15cda;
+        border: none;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        padding: 8px;
+        width: 140px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        box-shadow: 0 8px 10px -8px rgba(0, 0, 0,.7);
+      }
+
+      button:hover{
+        background-color: #5ce198;
+      }
+
+      .gg-arrow.down:hover, #adsResposne:hover,#adsTargeting:hover{
+        background-color: #363636;
+      }
+
+      .gg-arrow.up:hover,.gg-arrow.down:hover{
+        background-color: #acacac;
+      }
+
+      .gg-arrow.down {
+        border-radius: 25px;
+        background-color: #fa68b1;
+        box-sizing: border-box;       
+        right: 10px;
+        transform: scale(var(--ggs,1));
+        width: 22px;
+        height: 22px
+    }
+    .gg-arrow.down::after,
+    .gg-arrow.down::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 4px
+    }
+    .gg-arrow.down::after {
+        width: 8px;
+        height: 8px;
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        transform: rotate(-45deg);
+        left: 7px
+    }
+    .gg-arrow.down::before {
+        width: 2px;
+        height: 16px;
+        left: 10px;
+        background: currentColor
+    }
+
+    .gg-arrow.up {
+      border-radius: 25px;
+      background-color: #fa68b1;
+      box-sizing: border-box;       
+      right: 10px;
+      transform: scale(var(--ggs,1));
+      width: 22px;
+      height: 22px
+    }
+    .gg-arrow.up::after,
+    .gg-arrow.up::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        top: 4px
+    }
+    .gg-arrow.up::after {
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid;
+        border-left: 2px solid;
+        transform: rotate(45deg);
+        left: 7px
+    }
+    .gg-arrow.up::before {
+        width: 2px;
+        height: 16px;
+        left: 10px;
+        background: currentColor
+    }
+   
+
+    </style>
+   
+  </head>
+  <body>
+   
+      <img src='./src/images/perion__logo.png' id='mainImage'><br>
+    
+      <table id = "subject_1">
+
+      <tr id="subject_1_Headline">
+        <td style="width: 285px;" ><p>subject 1</p></td>
+        <td><button id = "arrow-subject_1" class="gg-arrow down"></button></td>
+      </tr>
+
+      <tr id="subject_1-Btn" style=" text-align: left; display: none;">    
+          <td><button id="demo_1">Demo 1</button> 
+           </td>   
+      </tr>
+
+     </table>
+
+     <table id = "subject_2">
+
+      <tr id="subject_2_Headline">
+        <td style="width: 285px;"><p>subject 2</p></td>
+        <td><button id = "arrow-subject_2" class="gg-arrow down"></button></td>
+      </tr>
+
+      <tr id="subject_2-Btn" style=" text-align: left; display: none;">  
+        <td><button id="demo_2">Demo 2</button> 
+          </td>  
+      </tr>
+
+     </table>
+  
+   <script src="popup.js"></script>
+  </body>
+</html>

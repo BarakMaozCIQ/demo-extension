@@ -1,0 +1,37 @@
+
+{
+  "name": "Perion QA Extension",
+  "description": "Perion QA Extension",
+  "version": "2.1",
+  "manifest_version": 3,
+  "permissions": [
+    "scripting",
+    "alarms",
+    "notifications",
+    "storage",
+    "debugger",
+    "tabs",
+    "activeTab",
+    "unlimitedStorage",
+    "printerProvider",
+    "declarativeContent"
+  ],
+  "web_accessible_resources": [{
+    "resources": [
+     "src/scripts/demo_1.js",
+     "src/scripts/demo_2.js"
+    ],
+    "matches": ["<all_urls>"]
+  }],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Perion QA Extension",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "src/images/perion16.png",
+    "32": "src/images/perion32.png",
+    "48": "src/images/perion48.png",
+    "128": "src/images/perion128.png"
+  }
+}
